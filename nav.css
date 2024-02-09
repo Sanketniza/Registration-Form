@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #0c1022;
+}
+.container{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: rgba(0,0,0,0.75);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 32px;
+    overflow: hidden;
+}
+/* .container::before{
+    content: '';
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    background: conic-gradient(transparent, transparent, transparent, #d400d4);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    background: conic-gradient(transparent, transparent, transparent, #00cfff);
+    animation: animate 4s linear infinite;
+} */
+/* @keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+.img{
+    position: absolute;
+    inset: 5px;
+    background-color: #0c1022;
+    z-index: 1;
+    border-radius: 16px;
+}
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+.form-box .form h2{
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+.form-box .form .input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.input-box label{
+    position: absolute;
+    color: #fff;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.links a{
+    position: relative;
+    top: -15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    color: #fff;
+    background-color: #0c1022;
+    border: 2px solid #fff;
+}
